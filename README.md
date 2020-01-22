@@ -82,8 +82,8 @@ Grant the newly created service account permissions to:
 ```sh
 $ gcloud projects add-iam-policy-binding ${TF_PROJECT_ID} --member serviceAccount:terraform@${TF_PROJECT_ID}.iam.gserviceaccount.com --role roles/viewer
 $ gcloud projects add-iam-policy-binding ${TF_PROJECT_ID} --member serviceAccount:terraform@${TF_PROJECT_ID}.iam.gserviceaccount.com --role roles/storage.admin
-$ gcloud projects add-iam-policy-binding ${TF_PROJECT_ID} --member serviceAccount:terraform@${TF_PROJECT_ID}.iam.         gserviceaccount.com --role roles/container.admin
-$ gcloud projects add-iam-policy-binding ${TF_PROJECT_ID} --member serviceAccount:terraform@${TF_PROJECT_ID}.iam.         gserviceaccount.com --role roles/iam.serviceAccountUser
+$ gcloud projects add-iam-policy-binding ${TF_PROJECT_ID} --member serviceAccount:terraform@${TF_PROJECT_ID}.iam.gserviceaccount.com --role roles/container.admin
+$ gcloud projects add-iam-policy-binding ${TF_PROJECT_ID} --member serviceAccount:terraform@${TF_PROJECT_ID}.iam.gserviceaccount.com --role roles/iam.serviceAccountUser
 ```
 
 Terraform interacts with Google Cloud through its API. For
