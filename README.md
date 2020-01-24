@@ -96,7 +96,7 @@ $ gcloud services enable cloudbilling.googleapis.com
 $ gcloud services enable iam.googleapis.com
 $ gcloud services enable compute.googleapis.com
 $ gcloud services enable container.googleapis.com
-$ gcloud services status serviceusage.googleapis.com
+$ gcloud services enable serviceusage.googleapis.com
 ```
 
 ### Set up remote state
