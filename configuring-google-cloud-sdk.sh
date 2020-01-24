@@ -30,8 +30,7 @@ gsutil versioning set on gs://${TF_PROJECT_ID}
 
 # Configure your environment for the Google Cloud Terraform provider:
 
-export GOOGLE_APPLICATION_CREDENTIALS=${TF_CREDS}
-export GOOGLE_PROJECT=${TF_PROJECT_ID}
+source ./configure_gcloud_tf_provider.sh
 
 cat > backend.tf << EOF
 terraform {
