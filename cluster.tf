@@ -69,5 +69,10 @@ resource "google_container_node_pool" "general_purpose" {
     preemptible = true
     machine_type = var.general_purpose_machine_type
     service_account = "terraform@${var.project}.iam.gserviceaccount.com"
+    oauth_scopes = [
+  "https://www.googleapis.com/auth/devstorage.read_only",
+  "https://www.googleapis.com/auth/logging.write",
+  "https://www.googleapis.com/auth/monitoring"
+]
   }
 }

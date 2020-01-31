@@ -54,6 +54,9 @@ You can get your billing account id running the following command:
 $ gcloud beta billing accounts list
 ```
 
+
+TODO: remove this ,is now a script
+
 ### Create a project
 
 Create a new project and link it to your billing account:

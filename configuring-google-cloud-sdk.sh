@@ -30,8 +30,6 @@ gsutil versioning set on gs://${TF_PROJECT_ID}
 
 # Configure your environment for the Google Cloud Terraform provider:
 
-source ./configure_gcloud_tf_provider.sh
-
 cat > backend.tf << EOF
 terraform {
   backend "gcs" {

@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "gke-terraform-jenkinsx"
+    bucket = "terraform-gke-playground"
     prefix = "terraform/state"
   }
 }
